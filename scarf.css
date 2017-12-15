@@ -1,0 +1,51 @@
+.scarf {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  left: 50%;
+  margin-left: -75px;
+  background-color: blue;
+  z-index: -20;
+  border-radius: 100%;
+  top: -15px;
+}
+
+.scarf:before {
+  position: absolute;
+  content: "";
+  height: 80px;
+  width: 50px;
+  left: 60px;
+  top: 40px;
+	color: blue;
+  background: -webkit-linear-gradient(left,
+    blue 0%, blue 10%,
+    transparent 10%, transparent 15%,
+    blue 15%, blue 25%,
+    transparent 25%, transparent 30%,
+    blue 30%, blue 40%,
+    transparent 40%, transparent 45%,
+    blue 45%, blue 55%,
+    transparent 55%, transparent 60%,
+    blue 60%, blue 70%,
+    transparent 70%, transparent 75%,
+    blue 75%, blue 85%,
+    transparent 85%, transparent 90%,
+    blue 90%, blue 100%),
+    -webkit-linear-gradient(blue 50%, transparent 50%);
+  background: linear-gradient(left,
+    blue 0%, blue 10%,
+    transparent 10%, transparent 15%,
+    blue 15%, blue 25%,
+    transparent 25%, transparent 30%,
+    blue 30%, blue 40%,
+    transparent 40%, transparent 45%,
+    blue 45%, blue 55%,
+    transparent 55%, transparent 60%,
+    blue 60%, blue 70%,
+    transparent 70%, transparent 75%,
+    blue 75%, blue 85%,
+    transparent 85%, transparent 90%,
+    blue 90%, blue 100%),
+    linear-gradient(blue 50%, transparent 50%);
+}

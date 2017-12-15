@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('./icomoon.woff') format('woff');
+}
+
+
+body {
+  background: linear-gradient(90deg, #fcb, #1922);
+  height: 100vh;
+  font-family: "icomoon", sans-serif;
+}
+
+.bunny {
+  position: absolute;
+  width: 280px;
+  height: 440px;
+  top: calc(40vh - 220px);
+  left: 50%;
+  margin-left: -140px;
+}
+
+.head {
+  width: 200px;
+  height: 150px;
+  left: 50%;
+  margin-left: -100px;
+  background-color: #FFB6C1;
+  border-radius: 50%;
+  position: absolute;
+  top: 160px;
+  z-index: -10;
+}
+
+.head:before, .head:after {
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 5px;
+  border-radius: 100%;
+  background-color: #333;
+  top: 70px;
+}
+
+.head:before {
+  left: 70px;
+}
+
+.head:after {
+  right: 70px;
+}
+
+.ears {
+  position: absolute;
+  height: 100px;
+  width: 80px;
+  top: 100px;
+  background-color: #FFB6C1;
+  border-radius: 80%;
+}
+
+.left-ear {
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  left: 40px;
+}
+
+.right-ear {
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+  right: 40px;
+}
+
+
+
+.body {
+  width: 220px;
+  height: 120px;
+  left: 50%;
+  margin-left: -110px;
+  top: 300px;
+  background-color: #FFB6C1;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -15;
+}
+
+.legs {
+  width: 280px;
+  height: 45px;
+  left: 50%;
+  margin-left: -140px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10px;
+  z-index: -16;
+  filter: blur(15px);
+}
